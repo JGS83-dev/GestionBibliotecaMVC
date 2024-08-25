@@ -21,14 +21,14 @@ namespace GestionBibliotecaMVC.Models
         [Required]
         [ForeignKey("Autor")]
         [Display(Name = "Autor")]
-        public string? AutorID { get; set; }
+        public int? AutorID { get; set; }
 
         public Autor? Autor { get; set; }
 
         [Required]
         [ForeignKey("Categoria")]
         [Display(Name = "Categoria")]
-        public string? CategoriaID { get; set; }
+        public int? CategoriaID { get; set; }
 
         public Categoria? Categoria { get; set; }
     }
