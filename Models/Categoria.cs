@@ -14,5 +14,6 @@ namespace GestionBibliotecaMVC.Models
         [Required(ErrorMessage = "El campo nombre es requerido")]
         public string Nombre { get; set; } = string.Empty;
 
+        public ICollection<Libro>? Libro { get; set; }
     }
 }

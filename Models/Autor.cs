@@ -18,5 +18,7 @@ namespace GestionBibliotecaMVC.Models
         [Display(Name = "Apellido")]
         [Required(ErrorMessage = "El campo apellido es requerido")]
         public string Apellido { get; set; } = string.Empty;
+
+        public ICollection<Libro>? Libro { get; set; }
     }
 }

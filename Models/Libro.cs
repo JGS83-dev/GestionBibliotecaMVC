@@ -23,6 +23,18 @@ namespace GestionBibliotecaMVC.Models
         [Required(ErrorMessage = "El campo apellido es requerido")]
         public string Apellido { get; set; } = string.Empty;
 
+        [Required]
+        [ForeignKey("Autor")]
+        [Display(Name = "Autor")]
+        public string? AutorID { get; set; }
 
+        public Autor? Autor { get; set; }
+
+        [Required]
+        [ForeignKey("Categoria")]
+        [Display(Name = "Categoria")]
+        public string? CategoriaID { get; set; }
+
+        public Categoria? Categoria { get; set; }
     }
 }
