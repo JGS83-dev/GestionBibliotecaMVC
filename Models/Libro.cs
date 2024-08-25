@@ -18,11 +18,6 @@ namespace GestionBibliotecaMVC.Models
         [Required(ErrorMessage = "El campo fecha de publicación es requerido")]
         public DateTime FechaPublicacion { get; set; }
 
-        [StringLength(100, ErrorMessage = "El apellido debe contener máximo 100 caracteres")]
-        [Display(Name = "Apellido")]
-        [Required(ErrorMessage = "El campo apellido es requerido")]
-        public string Apellido { get; set; } = string.Empty;
-
         [Required]
         [ForeignKey("Autor")]
         [Display(Name = "Autor")]
